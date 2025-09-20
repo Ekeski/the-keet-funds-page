@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The KEET</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../order/assets/css/layout.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/logo_trans_blue 1.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="./assets/css/swiperjs.css" />
+  </head>
+
+  <body>
+    <!-- Top Nav  -->
+    <header class="position-sticky top-0" id="header">
+      <nav style="background-color: #0d0733; color: white">
+        <div
+          class="container-fluid d-flex justify-content-between py-3 px-3 px-lg-5"
+        >
+          <div>
+            <a href="#"
+              ><img
+                src="./assets/img/logo_trans_blue 1.png"
+                alt=""
+                class="img-fluid"
+            /></a>
+          </div>
+          <div class="d-flex align-items-center gap-3 gap-md-5">
+            <div
+              class="d-none d-md-flex d-lg-flex d-xl-flex align-items-center gap-2"
+            >
+              <div>
+                <img src="./assets/img/Ash box.png" class="img-fluid" alt="" />
+              </div>
+              <div class="username d-sm-none d-lg-block d-md-block d-xl-block">
+                <abbr title="GeborOfficial">
+                  <div>Hi, GeborOffic...</div>
+                </abbr>
+                <div style="font-size: 0.8rem">
+                  8764535373 <span><i class="fa-thin fa-copy"></i></span>
+                </div>
+              </div>
+            </div>
+            <div class="bg-primary p-2 notif rounded">
+              <abbr title="0 New Notification"
+                ><i class="fa-solid fa-bell" style="color: #ffffff"></i
+              ></abbr>
+            </div>
+
+            <img
+              src="./assets/img/Group 30.png"
+              id="hamburgerMenu"
+              class="d-lg-none d-xl-none d-block hamburger img-fluid"
+              alt=""
+            />
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="row g-0 position-relative">
+      <!-- Left Sidebar -->
+      <nav
+        class="left-div col-lg-3 col-xl-3 ps-3 ps-xl-4 bg-white shadow-sm hide-left-sidebar"
+        id="left-sidebar"
+      >
+        <div class="menu-opt pt-3 fw-semibold">Main Menu</div>
+        <ul class="list-group pt-3 ps-4">
+          <a href="../home/index.html">
+            <li class="list-group-item border-0">
+              <i class="fa-light fa-house-chimney"></i>
+              Home
+            </li>
+          </a>
+          <a href="#">
+            <li id="active" class="list-group-item active border-0">
+              <i class="fa-light fa-basket-shopping"></i>
+              Orders
+            </li>
+          </a>
+          <li class="list-group-item border-0">
+            <a href="#">
+              <i class="bi bi-wallet2"></i>
+              Funds
+            </a>
+          </li>
+          <li class="list-group-item border-0">
+            <a href="#">
+              <i class="bi bi-person-circle"></i>
+              My Profile
+            </a>
+          </li>
+        </ul>
+
+        <div class="menu-opt pt-2 fw-semibold">Account Menu</div>
+        <ul class="list-group pt-3 ps-4">
+          <li class="list-group-item border-0">
+            <a href="#"> Inbox </a>
+          </li>
+          <li class="list-group-item border-0">
+            <a href="#"> Settings </a>
+          </li>
+          <li class="list-group-item border-0">
+            <a href="#"> My Tickets </a>
+          </li>
+          <li class="list-group-item border-0">
+            <a href="#"> Refer A Friend </a>
+          </li>
+          <li class="list-group-item border-0">
+            <a href="#"> Logout </a>
+          </li>
+        </ul>
+
+        <div
+          class="w-75 text-center rounded mt-3 p-3"
+          style="background-color: #0d0733; color: white"
+        >
+          <div class="fw-bolder pb-2">Need Support</div>
+          <div>Send a message to our support</div>
+          <div class="btn btn-primary px-4 mt-2">New Ticket</div>
+        </div>
+      </nav>
+
+      <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+      <!-- Tomorrow i will do the drop down then i will add margin to the buttom and also work on smaller devices -->
+
+      <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+      <!-- middle Content -->
+      <div
+        class="right-div mt-4 col-12 col-md-7 col-lg-6 col-xl-6 px-3 px-lg-5 border-end"
+      >
+        <div class="arrow">
+          <img src="./assets/img/Back.png" alt="" />
+          <p>My Orders</p>
+        </div>
+
+        <div class="second mx-5">
+          <p>All orders</p>
+
+          <div class="dropdown">
+            <button
+              class="btn border-0"
+              type="button"
+              id="dropdownMenu2"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <p>
+                Filter by
+                <img src="./assets/img/filter 1.png" alt="" />
+              </p>
+            </button>
+            <ul class="dropdown-menu mx-5" aria-labelledby="dropdownMenu2">
+              <li>
+                <button class="dropdown-item" type="button">All Order</button>
+              </li>
+              <li>
+                <button class="dropdown-item" type="button">Awaiting</button>
+              </li>
+              <li>
+                <button class="dropdown-item" type="button">Pending</button>
+              </li>
+              <li>
+                <button class="dropdown-item" type="button">Processing</button>
+              </li>
+              <li>
+                <button class="dropdown-item" type="button">In Progress</button>
+              </li>
+              <li>
+                <button class="dropdown-item" type="button">Completed</button>
+              </li>
+              <li>
+                <button class="dropdown-item" type="button">Partial</button>
+              </li>
+              <li>
+                <button class="dropdown-item" type="button">Canceled</button>
+              </li>
+              <li>
+                <button class="dropdown-item" type="button">Refunded</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="single pt-5 px-4 mx-5 bg-white rounded-2">
+          <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <div class="from d-flex justify-content-between">
+              <p>
+                <img src="./assets/img/Instagram.png" alt="" />
+                Instagram
+              </p>
+              <span class="transaction-status">completed</span>
+            </div>
+            <div class="three bg-white d-flex justify-content-between">
+              <p>https://instagram.com/polarisbnk</p>
+              <img src="./assets/img/Back (1).png" alt="" />
+            </div>
+            <div class="four bg-white d-flex justify-content-between">
+              <p>Quantity:50</p>
+              <p>Remains:-2</p>
+            </div>
+            <div class="last border-bottom bg-white">
+              <p>Sep 04 2024 - 10:53 AM</p>
+            </div>
+          </a>
+          <!-- ////////////////// -->
+          <div class="from pt-5 d-flex justify-content-between">
+            <p>
+              <img src="./assets/img/Instagram.png" alt="" />
+              Instagram
+            </p>
+            <span class="transaction-status">completed</span>
+          </div>
+          <div class="three bg-white d-flex justify-content-between">
+            <p>https://instagram.com/polarisbnk</p>
+            <img src="./assets/img/Back (1).png" alt="" />
+          </div>
+          <div class="four bg-white d-flex justify-content-between">
+            <p>Quantity:50</p>
+            <p>Remains:-2</p>
+          </div>
+          <div class="last border-bottom bg-white">
+            <p>Sep 04 2024 - 10:53 AM</p>
+          </div>
+          <!--//////// ///////////// -->
+          <div class="from pt-5 d-flex justify-content-between">
+            <p>
+              <img src="./assets/img/Instagram.png" alt="" />
+              Instagram
+            </p>
+            <span class="transaction-status">completed</span>
+          </div>
+          <div class="three bg-white d-flex justify-content-between">
+            <p>https://instagram.com/polarisbnk</p>
+            <img src="./assets/img/Back (1).png" alt="" />
+          </div>
+          <div class="four bg-white d-flex justify-content-between">
+            <p>Quantity:50</p>
+            <p>Remains:-2</p>
+          </div>
+          <div class="last border-bottom bg-white">
+            <p>Sep 04 2024 - 10:53 AM</p>
+          </div>
+          <!-- ////////////////////// -->
+
+          <div class="from pt-5 d-flex justify-content-between">
+            <p>
+              <img src="./assets/img/Instagram.png" alt="" />
+              Instagram
+            </p>
+            <span class="transaction-status">completed</span>
+          </div>
+          <div class="three bg-white d-flex justify-content-between">
+            <p>https://instagram.com/polarisbnk</p>
+            <img src="./assets/img/Back (1).png" alt="" />
+          </div>
+          <div class="four bg-white d-flex justify-content-between">
+            <p>Quantity:50</p>
+            <p>Remains:-2</p>
+          </div>
+          <div class="last one bg-white">
+            <p>Sep 04 2024 - 10:53 AM</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+      <!-- Right Sidebar (Advertisement) -->
+      <div class="rightest-div col-lg-3 col-md-5 col-xl-3 my-4">
+        <div class="px-3 px-lg-5">
+          <div class="bg-warning w-100 mx-auto">
+            <img
+              src="./assets/img/launchad 1 (1).png"
+              class="img-fluid"
+              alt=""
+              style="width: 100%"
+            />
+          </div>
+
+          <div
+            class="text-white mt-4 w-100 mx-auto rounded px-2 py-3"
+            style="background-color: #a5946a"
+          >
+            <div class="d-flex">
+              <img src="./assets/img/MegaPhone.png" alt="" class="me-1" />
+              <div>Buy your next social media account on our platform</div>
+            </div>
+            <a
+              class="btn btn-dark px-3 py-2 mt-2 d-block mx-auto"
+              style="font-size: 0.7rem; width: fit-content"
+            >
+              KEETP2P.COM
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Add this at the bottom of your <body> tag -->
+    <nav class="mobile-bottom-nav d-sm-none">
+      <div class="mobile-bottom-nav__item active">
+        <a href="#" class="mobile-bottom-nav__item-content">
+          <i class="fas fa-home"></i>
+          <span>Home</span>
+        </a>
+      </div>
+      <div class="mobile-bottom-nav__item">
+        <a href="#" class="mobile-bottom-nav__item-content">
+          <i class="fas fa-file-alt"></i>
+          <span>Orders</span>
+        </a>
+      </div>
+      <div class="mobile-bottom-nav__item">
+        <a href="#" class="mobile-bottom-nav__item-content">
+          <i class="fas fa-wallet"></i>
+          <span>Funds</span>
+        </a>
+      </div>
+      <div class="mobile-bottom-nav__item">
+        <a href="#" class="mobile-bottom-nav__item-content">
+          <i class="fas fa-user"></i>
+          <span>Account</span>
+        </a>
+      </div>
+    </nav>
+
+    <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <!-- Button trigger modal -->
+    <!-- <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#exampleModal">
+</button> -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <p class="modal-title fs-5" id="exampleModalLabel"></p>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="down text-center bg-secondary-subtle p-2 mx-4 rounded">
+              Order #8765278
+            </p>
+            <div class="max mx-4 rounded">
+              <div class="vow mx-2 pt-3 d-flex justify-content-between">
+                <p>
+                  <img src="./assets/img/Instagram.png" alt="" />
+                  Instagram
+                </p>
+                <p class="burn rounded me-3">Completed</p>
+              </div>
+
+              <p class="mac mx-2">
+                👥 Instagram - Mixed Data Scrape <br />
+                ( Username-Comment -Location-Like-Hashtag )
+              </p>
+
+              <div class="lin mx-2 mt-4">
+                <p class="mp">Link</p>
+                <a href="https://instagram.com/polarisbnk">
+                  <p>https://instagram.com/polarisbnk</p>
+                </a>
+              </div>
+              <div class="every mx-2 mt-4 d-flex justify-content-between">
+                <div class="d-block">
+                  <h6>Quality</h6>
+                  <p>100</p>
+                </div>
+                <div class="d-block">
+                  <h6>Price</h6>
+                  <p>&#8358;51,000</p>
+                </div>
+                <div class="d-block me-3">
+                  <h6>Start Counter</h6>
+                  <p>0</p>
+                </div>
+              </div>
+              <div class="every mx-2 mt-4 d-flex">
+                <div class="chan d-block">
+                  <h6>Remains</h6>
+                  <p>130</p>
+                </div>
+                <div class="d-block">
+                  <h6>Order Time</h6>
+                  <p>Sep 23, 2024 08:12 AM</p>
+                </div>
+              </div>
+              <div class="every mx-2 mt-4 d-flex">
+                <div class="chan d-block">
+                  <h6>Live Update</h6>
+                  <p>Sep 23, 2024 08:12 AM</p>
+                </div>
+              </div>
+            </div>
+            <a href="">
+              <p class="noe my-4 text-center">
+                What does remains and counter mean?
+              </p>
+            </a>
+
+            <div class="d-grid">
+              <button class="btn text-center p-2 bg-danger-subtle mx-4 rounded">
+                <p>Report Dispute</p>
+              </button>
+            </div>
+          </div>
+          <div class="modal-footer border-0">
+            <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <script src="./assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+    <script src="./assets/js/swiper.js"></script>
+  </body>
+</html>
