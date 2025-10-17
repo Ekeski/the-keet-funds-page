@@ -79,6 +79,16 @@
       </nav>
     </header>
 
+    <div id="timeoutModal" class="session-modal">
+        <div class="session-modal-content">
+            <h5 class="text-danger"><i class="fas fa-clock"></i> Session Timeout</h5>
+            <p>Your session has expired due to 30 minutes of inactivity. Please log in again.</p>
+            <button id="closeTimeoutModal" class="btn btn-primary" onclick="window.location.href='login.html'">
+                Go to Login
+            </button>
+        </div>
+    </div>
+
     <!-- Main -->
     <main class="row g-0 position-relative">
       <!-- Left Sidebar -->
@@ -128,8 +138,8 @@
           <li class="list-group-item border-0">
             <a href="#"> Refer A Friend </a>
           </li>
-          <li class="list-group-item border-0">
-            <a href="#"> Logout </a>
+          <li class="list-group-item border-0" id="logOutButton">
+            <a > Logout </a>
           </li>
         </ul>
 
@@ -364,5 +374,7 @@
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
 
     <script src="./assets/js/swiper.js"></script>
+    <script src="./login_assets/login.js"></script>
+    <script src="./assets/js/sessionTimer.js"></script>
   </body>
 </html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE KEET</title>
+     <link
+      rel="shortcut icon"
+      href="./login_assets/img/logo_trans_blue 1.png"
+      type="image/x-icon"
+    />
+    <link
+    <link rel="stylesheet" href="./login_assets/login.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1><img src="./login_assets/img/logo_trans_blue 1.png" alt=""></h1>
+       
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required autocomplete="username">
+                <p class="error-message" id="emailError"></p>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required autocomplete="current-password">
+                <p class="error-message" id="passwordError"></p>
+            </div>
+            
+            <button type="submit" id="loginButton">Log In</button>
+            
+            <div class="loader-container">
+                <div class="loader" id="formLoader"></div>
+            </div>
+            
+            <p class="server-message" id="serverMessage"></p>
+        </form>
+        <p class="server-status" id="authServiceStatus"></p>
+    </div>
+    <div id="successModal" class="modal-overlay">
+        <div class="modal-content">
+            <h2 class="success-text">Login Successful! 😊</h2>
+            <p>Welcome back! Redirecting you now...</p>
+        </div>
+    </div>
+
+    <div id="failureModal" class="modal-overlay">
+        <div class="modal-content">
+            <h2 class="failure-text">Login Failed! 😔</h2>
+            <p id="failureMessageDetail">Please check your credentials or try again later.</p>
+            <button id="closeFailureModal" class="modal-close-button">Close</button>
+        </div>
+    </div>
+
+    <script src="./login_assets/login.js"></script>
+</body>
+</html>
