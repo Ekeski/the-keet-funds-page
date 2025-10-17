@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     // --- Configuration ---
     // 30 minutes in milliseconds: 30 minutes * 60 seconds/minute * 1000 milliseconds/second
-    const INACTIVITY_TIMEOUT_MS = 1 * 60 * 1000; 
+    const INACTIVITY_TIMEOUT_MS = 5 * 60 * 1000; 
     const REDIRECT_URL = 'login.html'; // Assume your login page is named login.html
 
     // --- DOM Elements ---
