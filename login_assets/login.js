@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(() => {
             successModal.classList.remove('visible');
             console.log('Redirecting to dashboard...');
-            window.location.href = '/index.html';  // Linking of the login page to the home page after successful login
+            window.location.href = 'dashboard.html';  // Linking of the login page to the home page after successful login
         }, 2000); 
     };
 
